@@ -71,6 +71,7 @@ span{
   border: 1px solid transparent;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 img{
     width: 100%;
