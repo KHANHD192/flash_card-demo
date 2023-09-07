@@ -18,6 +18,7 @@ body{
 .container{
     width: 35rem;
     background-color: #ffffff05;
+      -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(6px);
     /* border: 1px solid #232323; */
     border-radius: 1rem;
