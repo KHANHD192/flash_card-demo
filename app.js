@@ -9,6 +9,9 @@ const song  = document.querySelector('#audio');
 container.addEventListener('mousemove',function (){
     song.play();
 })
+container.addEventListener('touchstart',function (){
+    song.play();
+})
 const createSnow = () => {
     const snow = document.createElement('span')
     snow.className = 'snow'
