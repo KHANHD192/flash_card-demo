@@ -13,6 +13,7 @@ html{
 body{
     display: flex;
     flex-direction: row;
+    position:relative;
 }
 .container{
     width: 35rem;
@@ -120,3 +121,40 @@ i:hover{
      border-radius: 5px;
      margin:0 auto;
 }
+.snow {
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: snowFall 10s linear;
+    z-index: 1;
+  }
+  @keyframes snowFall {
+    0% {
+      opacity: 0;
+      top: 0;
+      transform: translateX(-5px);
+    }
+  
+    10% {
+      opacity: 1;
+      transform: translateX(5px);
+    }
+    20% {
+      transform: translateX(-5px);
+    }
+    30% {
+      opacity: 1;
+      transform: translateX(5px);
+    }
+    40% {
+      transform: translateX(-5px);
+    }
+  
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      top: 90%;
+    }
+  }
